@@ -1,0 +1,37 @@
+{
+  "name": "makemit-dayof-2020",
+  "version": "1.0.0",
+  "description": "Day Of Page for MakeMIT 2020",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.config.dev.js",
+    "build": "webpack --progress --config build/webpack.config.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techx/makemit-dayof-2020.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/techx/makemit-dayof-2020/issues"
+  },
+  "homepage": "https://github.com/techx/makemit-dayof-2020#readme",
+  "devDependencies": {
+    "css-loader": "^3.4.0",
+    "file-loader": "^5.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "style-loader": "^1.1.1",
+    "ts-loader": "^6.2.1",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.4",
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1",
+    "webpack-merge": "^4.2.2"
+  }
+}

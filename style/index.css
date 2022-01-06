@@ -1,0 +1,371 @@
+:root {
+  --light-red: #f94;
+  --med-red: #f26722;
+  --light-yellow: #fee638;
+  --med-yellow: #faa32e;
+  --light-blue: #76b5ea;
+  --med-blue: #36609e;
+  --light-primary: var(--light-yellow);
+  --med-primary: var(--med-yellow);
+  --light-secondary: var(--light-blue);
+  --med-secondary: var(--med-blue);
+  --light-tertiary: var(--light-red);
+  --med-tertiary: var(--med-red);
+  scroll-behavior: smooth;
+  font-size: 1.25em;
+  color: black;
+  background-color: var(--light-blue);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat Bold", "Montserrat", sans-serif;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  color: white;
+}
+
+html {
+  font-family: "Montserrat-Regular", "Montserrat", serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: column-reverse nowrap;
+}
+
+body * {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+main {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+nav {
+  background-color: var(--med-blue);
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  height: 70px;
+}
+
+nav > section {
+  flex-flow: row wrap;
+}
+
+nav a {
+  margin: 0 1em;
+}
+
+main > * {
+  background-color: var(--light-blue);
+  flex: 1;
+  transform: translateY(100%);
+  overflow: auto;
+  opacity: 0;
+  --transition-time: 750ms;
+  transition: opacity var(--transition-time), transform var(--transition-time);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+[makemit-visible] {
+  opacity: 1;
+  transform: none;
+}
+
+main > :first-child {
+  background-color: var(--light-blue);
+}
+
+[nav-link] {
+  color: white;
+}
+
+[page-link] {
+  color: var(--med-blue);
+}
+
+:any-link {
+  text-decoration: none;
+  transition: color 250ms;
+  padding: 10px 5px;
+}
+
+:any-link:hover,
+[makemit-mit] {
+  color: var(--light-yellow);
+}
+
+h1 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+  margin: 1em;
+}
+
+[makemit-inline-parent] {
+  display: block;
+}
+
+[makemit-inline] {
+  display: inline;
+}
+
+:any-link[makemit-inline] {
+  padding: 0;
+  text-decoration: underline;
+}
+
+[makemit-row-table] {
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 10px;
+}
+
+[makemit-row-table] > div {
+  max-width: 350px;
+  padding: 15px 20px;
+  align-items: center;
+}
+
+[makemit-single-time] {
+  flex: 0.65;
+}
+
+[makemit-emergency] {
+  color: var(--light-red);
+}
+
+h2 {
+  margin: 10px;
+}
+
+time + p {
+  margin: 0;
+  flex: 1;
+  text-align: center;
+}
+
+time {
+  padding: 0 10px;
+  flex: 0.25;
+  text-align: center;
+}
+
+main > :not(:first-child) h1 {
+  color: var(--light-yellow);
+}
+
+main > :not(:first-child) h2 {
+  color: var(--med-blue);
+}
+
+[makemit-grand-prizes] p {
+  text-align: center;
+  transition: color 150ms;
+}
+
+[makemit-grand-prizes] p:hover {
+  color: var(--light-yellow);
+  cursor: default;
+}
+
+[makemit-grand-prizes] {
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+[makemit-category-container] {
+  width: 600px;
+}
+
+[makemit-prize-placement],
+[makemit-prize-description] {
+  font-weight: 500;
+}
+
+[makemit-prize-info] {
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.ios section > article,
+.ios main {
+  display: initial;
+}
+
+main > section {
+  display: none;
+}
+
+h1 + img {
+  min-width: 300px;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  margin: auto;
+}
+
+[makemit-coming-soon] {
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  color: black;
+}
+
+[makemit-sponsored-prizes] h4,
+[makemit-sponsored-prizes] h5,
+[makemit-sponsored-prizes] h6,
+[makemit-sponsored-prizes] p {
+  margin: 0;
+}
+
+[makemit-sponsored-prizes] > * {
+  margin: 0 auto;
+  text-align: center;
+}
+
+html:not(.ios) [makemit-sponsored-prizes] [makemit-table] {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+html:not(.ios) [makemit-sponsored-prizes] [makemit-table] > section {
+  width: 300px;
+}
+
+[makemit-sponsored-prizes] h5,
+[makemit-sponsored-prizes] h6 {
+  font-size: 1rem;
+  margin: 10px auto;
+}
+
+[makemit-sponsored-prizes] h3,
+[makemit-sponsored-prizes] h4 {
+  margin: 10px auto;
+  font-size: 1.25em;
+}
+
+[makemit-sponsored-prizes] h3 {
+  color: var(--med-red);
+}
+
+[makemit-sponsored-prizes] p {
+  max-width: 80vw;
+}
+
+[makemit-sponsored-prizes] a {
+  color: black;
+}
+
+[makemit-sponsored-prizes] {
+  margin-bottom: 20px;
+}
+
+section > p {
+  margin: 10px;
+  padding: 0 2em;
+}
+
+[link] {
+  color: var(--light-yellow);
+}
+
+[link]:hover {
+  color: var(--med-blue);
+}
+
+h2 {
+  color: var(--med-blue);
+}
+
+article {
+  background-color: #d9ecfc;
+  display: block;
+  margin: 10px auto 10px auto;
+  padding: 20px 10px 20px 10px;
+  width: fit-content;
+  text-align: center;
+  height: auto;
+}
+
+[schedule-section] {
+  display: flex;
+  flex-direction: row;
+}
+
+[schedule-section] p {
+  margin: 0px;
+  display: inline-block;
+}
+[schedule-section] h4 {
+  color: var(--med-blue);
+}
+
+[office-hours] {
+  display: flex;
+}
+
+[oh-table] {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+[oh-desc] {
+  width: fit-content;
+  text-align: left;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+[oh-desc] a {
+  display: inline-block;
+}
+
+tb {
+  font-weight: bold;
+}
+
+[oh-col] {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+[office-hours] article {
+  margin-top: 40px;
+}
+
+[table-title] {
+  color: #36609e;
+}
+
+[office-hours-article] {
+  margin-left: 50px;
+  margin-right: 50px;
+}
