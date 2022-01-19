@@ -5,7 +5,7 @@ const pages = Array.from(main.children);
 const rmap = ["?", "?schedule", "?map", "?prizes", "?officehours"];
 let map = new Map<string, number>();
 rmap.forEach((s, i) => map.set(s, i));
-const rmapT = ["MakeMIT 2021 Day Of", "MakeMIT 2021 Schedule", "MakeMIT 2021 Map", "MakeMIT 2021 Prizes", "MakeMIT 2021 Office Hours"];
+const rmapT = ["MakeMIT 2022 Day Of", "MakeMIT 2022 Schedule", "MakeMIT 2022 Map", "MakeMIT 2022 Prizes", "MakeMIT 2022 Office Hours"];
 const timeouts = [0, 0, 0, 0];
 function spa(i: number, modify = true, push = true) {
     const j = +main.getAttribute("data-visible");

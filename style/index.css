@@ -1,20 +1,21 @@
 :root {
-  --light-red: #f94;
-  --med-red: #f26722;
-  --light-yellow: #fee638;
-  --med-yellow: #faa32e;
-  --light-blue: #76b5ea;
-  --med-blue: #36609e;
-  --light-primary: var(--light-yellow);
-  --med-primary: var(--med-yellow);
-  --light-secondary: var(--light-blue);
-  --med-secondary: var(--med-blue);
-  --light-tertiary: var(--light-red);
-  --med-tertiary: var(--med-red);
+  --light-olive: #a88607;
+  --med-olive: #816803;
+  --light-beige: #e4d3b4;
+  --med-beige: #ceb078;
+  --light-khaki: #f7f0dd;
+  --med-khaki: #9b925a;
+  --dark-khaki: #41521f;
+  --light-primary: var(--light-beige);
+  --med-primary: var(--med-beige);
+  --light-secondary: var(--light-khaki);
+  --med-secondary: var(--med-khaki);
+  --light-tertiary: var(--light-olive);
+  --med-tertiary: var(--med-olive);
   scroll-behavior: smooth;
   font-size: 1.25em;
   color: black;
-  background-color: var(--light-blue);
+  background-color: var(--light-khaki);
 }
 
 h1,
@@ -58,7 +59,7 @@ main {
 }
 
 nav {
-  background-color: var(--med-blue);
+  background-color: var(--med-khaki);
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
@@ -75,7 +76,7 @@ nav a {
 }
 
 main > * {
-  background-color: var(--light-blue);
+  background-color: var(--light-khaki);
   flex: 1;
   transform: translateY(100%);
   overflow: auto;
@@ -93,7 +94,7 @@ main > * {
 }
 
 main > :first-child {
-  background-color: var(--light-blue);
+  background-color: var(--light-khaki);
 }
 
 [nav-link] {
@@ -101,7 +102,7 @@ main > :first-child {
 }
 
 [page-link] {
-  color: var(--med-blue);
+  color: var(--light-olive);
 }
 
 :any-link {
@@ -112,7 +113,7 @@ main > :first-child {
 
 :any-link:hover,
 [makemit-mit] {
-  color: var(--light-yellow);
+  color: var(--med-olive);
 }
 
 h1 {
@@ -151,7 +152,7 @@ h1 {
 }
 
 [makemit-emergency] {
-  color: var(--light-red);
+  color: var(--light-olive);
 }
 
 h2 {
@@ -171,11 +172,11 @@ time {
 }
 
 main > :not(:first-child) h1 {
-  color: var(--light-yellow);
+  color: var(--light-beige);
 }
 
 main > :not(:first-child) h2 {
-  color: var(--med-blue);
+  color: var(--med-khaki);
 }
 
 [makemit-grand-prizes] p {
@@ -184,7 +185,7 @@ main > :not(:first-child) h2 {
 }
 
 [makemit-grand-prizes] p:hover {
-  color: var(--light-yellow);
+  color: var(--light-beige);
   cursor: default;
 }
 
@@ -267,7 +268,7 @@ html:not(.ios) [makemit-sponsored-prizes] [makemit-table] > section {
 }
 
 [makemit-sponsored-prizes] h3 {
-  color: var(--med-red);
+  color: var(--med-olive);
 }
 
 [makemit-sponsored-prizes] p {
@@ -288,19 +289,22 @@ section > p {
 }
 
 [link] {
-  color: var(--light-yellow);
+  color: var(--med-beige);
 }
 
 [link]:hover {
-  color: var(--med-blue);
+  color: var(--med-khaki);
 }
 
 h2 {
-  color: var(--med-blue);
+  color: var(--med-khaki);
 }
 
 article {
-  background-color: #d9ecfc;
+  border-radius: 20px;
+  border-color: var(--med-beige);
+
+  background-color: var(--light-beige);
   display: block;
   margin: 10px auto 10px auto;
   padding: 20px 10px 20px 10px;
@@ -319,7 +323,7 @@ article {
   display: inline-block;
 }
 [schedule-section] h4 {
-  color: var(--med-blue);
+  color: var(--med-khaki);
 }
 
 [office-hours] {
