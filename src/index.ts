@@ -2,10 +2,10 @@ import "../style/index.css";
 
 const main = document.getElementsByTagName("main").item(0);
 const pages = Array.from(main.children);
-const rmap = ["?", "?schedule", "?map", "?prizes", "?officehours"];
+const rmap = ["?", "?schedule", "?map", "?prizes", "?officehours", "?inperson", "?virtual"];
 let map = new Map<string, number>();
 rmap.forEach((s, i) => map.set(s, i));
-const rmapT = ["MakeMIT 2022 Day Of", "MakeMIT 2022 Schedule", "MakeMIT 2022 Map", "MakeMIT 2022 Prizes", "MakeMIT 2022 Office Hours"];
+const rmapT = ["MakeMIT 2022 Day Of", "MakeMIT 2022 Schedule", "MakeMIT 2022 Map", "MakeMIT 2022 Prizes", "MakeMIT 2022 Office Hours", "MakeMIT 2022 In-Person", "MakeMIT 2022 Virtual"];
 const timeouts = [0, 0, 0, 0];
 function spa(i: number, modify = true, push = true) {
     const j = +main.getAttribute("data-visible");
