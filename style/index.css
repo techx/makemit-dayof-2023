@@ -30,7 +30,7 @@ h3 {
 }
 
 h1 {
-  color: white;
+  color: var(--light-olive);
 }
 
 html {
@@ -172,7 +172,7 @@ time {
 }
 
 main > :not(:first-child) h1 {
-  color: var(--light-beige);
+  color: var(--light-olive);
 }
 
 main > :not(:first-child) h2 {
@@ -366,7 +366,7 @@ tb {
 }
 
 [table-title] {
-  color: #36609e;
+  color: var(--med-khaki);
 }
 
 [office-hours-article] {
