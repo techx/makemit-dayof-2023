@@ -152,7 +152,7 @@ h1 {
 }
 
 [makemit-emergency] {
-  color: var(--light-olive);
+  color: var(--dark-khaki);
 }
 
 h2 {
@@ -298,6 +298,37 @@ section > p {
 
 h2 {
   color: var(--med-khaki);
+}
+
+[makemit-inperson] {
+  display: flex;
+  max-width: 1200px;
+}
+
+[makemit-virtual] {
+  display: flex;
+  max-width: 1200px;
+}
+
+[makemit-schedule] h4 {
+  color: black;
+  font-weight: bold;
+}
+
+[sched-table] {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+[sched-col] {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 article {
