@@ -59,15 +59,19 @@ main {
 }
 
 nav {
+  display: flex;
   background-color: var(--med-khaki);
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
   font-size: 16px;
-  height: 70px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  /*height: 70px;*/
 }
 
 nav > section {
+  display:flex;
   flex-flow: row wrap;
 }
 
